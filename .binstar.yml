@@ -1,0 +1,20 @@
+package: mocha
+user: wakari
+
+platform:
+  - linux-32
+  - linux-64
+  # - osx-64
+
+install:
+  - sudo yum erase -q gcc gcc-c++
+  - sudo yum install -q gcc gcc-c++
+  - conda config -f --add channels https://conda.binstar.org/wakari/channel/master
+
+engine:
+  - python=2
+
+script:
+  - conda build .
+
+build_targets: conda

@@ -1,0 +1,16 @@
+package:
+  name: mocha
+  version: 1.18.2
+
+requirements:
+  build:
+    - nodejs
+  run:
+    - nodejs
+
+test:
+  commands:
+    - mocha --version
+
+about:
+  home: http://visionmedia.github.io/mocha/
